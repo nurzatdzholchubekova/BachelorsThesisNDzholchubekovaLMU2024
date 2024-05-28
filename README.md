@@ -1,0 +1,1 @@
+# BachelorsThesisNDzholchubekovaLMU2024
