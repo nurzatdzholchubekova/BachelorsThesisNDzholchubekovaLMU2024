@@ -1,0 +1,108 @@
+% Fristen: 
+% https://www.cis.uni-muenchen.de/ba/termine/index.html
+%
+% Empfohlene Richtlinien für Bachelorarbeiten: 
+% https://www.cis.uni-muenchen.de/ba/bachelorarbeit/richtlinien/index.html
+%
+% Informationen zu Abschlussarbeiten (Master):
+% https://www.cis.uni-muenchen.de/master/masterarbeit/index.html
+
+\documentclass[11pt,a4paper,twoside,openright]{scrbook}
+\usepackage{clba}
+
+% Per Kapitel Nummerierung von Graphiken und Tabellen
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+
+
+% Hier die eigenen Daten eintragen
+\global\fach{Computerlinguistik}
+\global\arbeit{Bachelorarbeit}
+\global\titel{Climate Change Insights through NLP}
+\global\bearbeiter{Nurzat Dzholchubekova}
+\global\betreuer{Dr. Diego Frassinelli}
+\global\pruefer{Prof. Dr. Barbara Plank}
+\global\universitaet{Ludwig- Maximilians- Universität München}
+\global\fakultaet{Fakultät für Sprach- und Literaturwissenschaften}
+\global\department{Department 2}
+
+\global\abgabetermin{04. Juni 2024}
+\global\bearbeitungszeit{26. März - 04. Juni 2024}
+\global\ort{München}
+
+
+\begin{document}
+
+% Deckblatt
+\deckblatt
+
+\pagestyle{scrheadings}
+\pagenumbering{gobble}
+
+% ErklÃ¤rung fürs Prüfungsamt
+\erklaerung
+
+% Zusammenfassung
+\addchap{Abstract}
+\thispagestyle{scrplain}
+\noindent
+\input{abstract}
+
+% Inhaltsverzeichnis
+\pagenumbering{Roman}
+
+\tableofcontents
+
+% Text mit arabischer Nummerierung
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\input{introduction}
+
+\chapter{Related Work}
+\input{related_work}
+
+\chapter{Methods and Resources}
+\input{methods_resources}
+
+\chapter{Data Trends and Sentiment in Climate Change Discussions}
+\input{experimental_design}
+
+\chapter{Analysis of Specific Topics in Climate Change Discussions}
+\input{specific_topics}
+
+\chapter{Discussion and Conclusion}
+\input{discussion_conclusion}
+
+\chapter{Limitations and Future Work}
+\input{future_work}
+
+
+%Beispielliteratur
+\newpage
+\bibliography{references}
+\bibliographystyle{acl_natbib}
+
+\newpage
+
+% Abbildungsverzeichnis (kann auch nach dem Inhaltsverzeichnis kommen)
+\listoffigures
+\newpage
+
+% Tabellenverzeichnis (kann auch nach dem Inhaltsverzeichnis kommen)
+\listoftables
+\newpage
+
+\addchap{Contents of the enclosed software/data package}
+All Python code, LaTeX files, and PDFs related to this study will be available on GitHub at the following repository: 
+
+\vspace{1em}
+
+\url{https://github.com/nurzatdzholchubekova/BachelorsThesisNDzholchubekovaLMU2024}. 
+
+\vspace{1em}
+
+This repository will include all necessary scripts and resources to reproduce the analyses and figures presented in this thesis.
+
+\end{document}
