@@ -75,7 +75,7 @@ logging information. If you run the script using PyCharm, you could
 achieve an emulation of the terminal by adding the run option
 _Emulate terminal in output console_:
 
-![img.png](PyCharm.png)
+![PyCharm.png](PyCharm.png)
 
 Initially, the _evaluation.py_ has all available plots enabled.
 Some of them might take some time to load and calculate. Logging
