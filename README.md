@@ -73,9 +73,7 @@ to run.
 It is recommended to run the script in terminal to receive better
 logging information. If you run the script using PyCharm, you could
 achieve an emulation of the terminal by adding the run option
-_Emulate terminal in output console_:
-
-![PyCharm.png](PyCharm.png)
+_Emulate terminal in output console_.
 
 Initially, the _evaluation.py_ has all available plots enabled.
 Some of them might take some time to load and calculate. Logging
