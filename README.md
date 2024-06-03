@@ -7,8 +7,8 @@ Repository for the materials associated with the Bachelors Thesis
 
 ## Thesis
 
-- The Python related code used for generation of all outputs can be found in folder **X**
-- The complete LaTeX project with PDF and TEX files can be found in folder **Y**
+- The Python related code used for generation of all outputs can be found in folder **Python**
+- The complete LaTeX project with PDF and TEX files can be found in folder **LaTeX**
 
 ## Python
 
